@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Response, status, HTTPException, Depends, APIRouter
-from .. import models, schemas, utils
+from .. import models, schemas
 from ..database import user_collection
 
 router = APIRouter(
@@ -9,7 +9,7 @@ router = APIRouter(
 
 
 @router.post("/", status_code=status.HTTP_201_CREATED, response_model=schemas.UserOut)
-def create_user(user: schemas.UserCreate, db = user_collection):
+def create_user(user: schemas.UserCreate): #, db = user_collection
 
     new_user = models.UserIn(**user.dict())
     db.add(new_user)
@@ -20,7 +20,7 @@ def create_user(user: schemas.UserCreate, db = user_collection):
 
 
 @router.get('/{id}', response_model=schemas.UserOut)
-def get_user(id: int, db = user_collection):
+def get_user(id: int): # , db = user_collection
     user = db.query(models.UserIn).filter(models.User.id == id).first()
     if not user:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,

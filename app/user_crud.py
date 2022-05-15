@@ -1,6 +1,6 @@
 import time
 from .config import settings
-from . import models, schemas, utils
+from . import models, schemas
 from .database import user_collection
 from .models import UserIn, UserOut
 
