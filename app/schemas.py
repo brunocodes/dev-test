@@ -3,31 +3,31 @@ from datetime import datetime
 from typing import Optional
 
 
-
 class UserOut(BaseModel):
-    id: int
+    user_id: int
+    nome: str
     email: EmailStr
-    created_at: datetime
+    telefone: str
+    endereco: str
+    profissao: str
 
     class Config:
         orm_mode = True
 
-
 class UserCreate(BaseModel):
-    user_name: str
+    user_id: int
+    nome: str
     email: EmailStr
-    password: str
+    telefone: str
+    endereco: str
+    profissao: str
+    curriculo: Optional[None] = None
 
-
-class UserLogin(BaseModel):
+class UserUpdate(BaseModel):
+    user_id: int
+    nome: str
     email: EmailStr
-    password: str
-
-
-class Token(BaseModel):
-    access_token: str
-    token_type: str
-
-
-class TokenData(BaseModel):
-    id: Optional[str] = None
+    telefone: str
+    endereco: str
+    profissao: str
+    curriculo: Optional[None] = None
