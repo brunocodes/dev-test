@@ -33,7 +33,7 @@ Requirements (FARM Stack)
     * Nav button
 
  * Register new user Input Form
-    * Name
+    * Nome
     * Email
     * Telefone
     * Endereço completo

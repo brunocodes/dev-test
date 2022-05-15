@@ -4,7 +4,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from . import models
 
 from .routers import user
-from .config import settings
 
 
 description = """
