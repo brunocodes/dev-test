@@ -20,9 +20,9 @@ async def create_user(user: UserIn) -> UserOut:
     result = await user_collection.insert_one(document)
     return document
 
-async def update_user(user_id: str, email: str) -> UserOut:
-    await user_collection.update_one({"_id": user_id}, {"$set": {"email": email}})
-    document = await user_collection.find_one({"_id": user_id})
+async def update_user(user: UserIn) -> UserOut:
+    await user_collection.update_one({"_id": user.user_id}, {"$set": {"email": user.email}})
+    document = await user_collection.find_one({"_id": user.user_id})
     return document
 
 async def remove_user(user_id: str)-> bool:

@@ -18,6 +18,11 @@ class UserCreate(BaseModel):
     email: EmailStr
     password: str
 
+class UserUpdate(BaseModel):
+    user_name: str
+    email: EmailStr
+    password: str
+
 
 class UserLogin(BaseModel):
     email: EmailStr
