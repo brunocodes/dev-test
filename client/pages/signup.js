@@ -32,11 +32,11 @@ export default function Signup() {
       console.log(newUser)
       if (response.status === 201 || response.status === 200) return response.json();
       // console.log(response)
-      throw new Error("Failed to add user");
+      // throw new Error("Failed to add user");
 
     }).then((jsonRes) => {
       setSubmit(true);
-      alert(`You have submited ${event.target.nome.value}`);
+      alert(`Obrigado pelo seu cadastro ${event.target.nome.value}`);
     })
   };
   const submitClear = async (event) => {
@@ -79,7 +79,12 @@ export default function Signup() {
 
             <label for="profissao">Profissao:</label><br />
             <input type="text" id="profissao" name="profissao" /><br />
-            <button>Sign In</button>
+
+            <label for="avatar">Upload de Curriculo:</label><br /><br />
+            <input type="file" id="curriculo" name="curriculo" accept="application/pdf"></input><br /><br />
+
+            <input type="reset" value="Limpar"></input>
+            <button>Enviar</button>
           </form>
         </div>
       </main>
