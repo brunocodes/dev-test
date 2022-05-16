@@ -13,10 +13,10 @@ Bruno  Dev Test FastapiAppTemplate
 
 You will be able to:
 
-* **Create users** (_not implemented_).
-* **Read users** (_not implemented_).
-* **Update users** (_not implemented_).
-* **Delete users** (_not implemented_).
+* **Create users**
+* **Read users**
+* **Update users**
+* **Delete users**
 """
 
 app = FastAPI(
