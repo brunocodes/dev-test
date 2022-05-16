@@ -3,28 +3,13 @@ from .. import models, schemas, user_crud
 from fastapi.encoders import jsonable_encoder
 import logging
 
-logger = logging.getLogger("devtest")
 
+logger = logging.getLogger("devtest")
 
 router = APIRouter(
     prefix="/users",
     tags=['Users']
 )
-
-
-@router.get("")
-async def get_user(): 
-
-    logger.info("Dummy Info")
-    logger.error("Dummy Error")
-    logger.debug("Dummy Debug")
-    logger.warning("Dummy Warning")
-    # user = await user_crud.fetch_one_user(user_id)
-    # if not user:
-    #     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-    #                         detail=f"User with id: {user_id} does not exist")
-
-    return True
 
 @router.post("", status_code=status.HTTP_201_CREATED, response_model=schemas.UserOut)
 async def create_user(user: schemas.UserCreate):
