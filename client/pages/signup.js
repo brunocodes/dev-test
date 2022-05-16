@@ -53,14 +53,14 @@ export default function Signup() {
     </nav>
     <div className={styles.container}>
       <Head>
-        <title>Signup</title>
-        <meta name="description" content="Signup now" />
+        <title>Cadastro</title>
+        <meta name="description" content="Cadastro de usuário" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.description}>
-          Sign  up Now!
+          Cadastrar!
         </h1>
         <div>
 
@@ -74,10 +74,10 @@ export default function Signup() {
             <label for="telefone">Telefone:</label><br />
             <input type="text" id="telefone" name="telefone" /><br />
 
-            <label for="endereco">Endereco:</label><br />
+            <label for="endereco">Endereço:</label><br />
             <input type="text" id="endereco" name="endereco" /><br />
 
-            <label for="profissao">Profissao:</label><br />
+            <label for="profissao">Profissão:</label><br />
             <input type="text" id="profissao" name="profissao" /><br />
 
             <label for="avatar">Upload de Curriculo:</label><br /><br />
