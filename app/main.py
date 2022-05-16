@@ -40,6 +40,6 @@ app.include_router(user.router)
 @app.get("/", include_in_schema=False)
 def root():
     return {
-        "Docs 1": "api.MySite.com/docs",
-        "Docs 2": "api.MySite.com/redoc"
+        "Docs 1": "http://127.0.0.1:8000/docs",
+        "Docs 2": "http://127.0.0.1:8000/redoc"
     }
