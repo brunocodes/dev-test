@@ -36,8 +36,8 @@ npm run dev
 # Run with Docker
 Não tive tempo de implementar a automação docker compose
 ## Python fastAPI
-[dev-test Python API](/Dockerfile"Python API Dockerfile")
+[dev-test Python API](/Dockerfile "Python API Dockerfile")
 
 ## Nextjs Front-end
 EM DESENVOLVIMENTO
-[dev-test Python API](/client/Dockerfile"Front-end Dockerfile")
+[dev-test Python API](/client/Dockerfile "Front-end Dockerfile")
