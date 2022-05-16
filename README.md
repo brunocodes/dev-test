@@ -12,10 +12,13 @@ pip install -r requirements.txt
 
 ```
 * Run manually
-
 ```
 uvicorn app.main:app --reload
-
+```
+* API Docs
+```
+http://127.0.0.1:8000/docs
+http://127.0.0.1:8000/redoc
 ```
 ## Nexe.js Client
 
