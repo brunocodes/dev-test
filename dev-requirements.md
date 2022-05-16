@@ -17,6 +17,8 @@ Requirements (FARM Stack)
 
 * release branch
     * Tests, QA
+    * merge release to main
+* main branch
 
 
 ### Python API

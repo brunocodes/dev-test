@@ -3,8 +3,9 @@
 
 ## Python fastAPI
 
-* Install
-
+* Install locally (Instalar localmente)
+Requires MongoDB Atlas DATABASE_LINK= in .env file.
+E preciso adicionar um .env file com link de banco de dados MongoDB Atlas DATABASE_LINK= 
 ```
 pip install -r requirements.txt
 
@@ -31,3 +32,12 @@ npm install
 npm run dev
 
 ```
+
+# Run with Docker
+Não tive tempo de implementar a automação docker compose
+## Python fastAPI
+[dev-test Python API](/Dockerfile"Python API Dockerfile")
+
+## Nextjs Front-end
+EM DESENVOLVIMENTO
+[dev-test Python API](/client/Dockerfile"Front-end Dockerfile")
